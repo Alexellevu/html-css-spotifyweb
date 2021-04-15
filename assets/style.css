@@ -3,12 +3,30 @@
     padding: 0;
     margin:0;
 }
-
+/* sidebar */
 .sidebar1{
     height: calc(100vh - 30px);
-    background-color: black;
+    background-color:black;
 }
 
+.logo{
+    height: 45px;
+    width: 70%; 
+   margin-top: 15px;
+   margin-bottom: 20px;
+}
+
+.img_menu{
+    height: 20px;
+    width: 25px;
+}
+
+.up_menu_nav li{
+    list-style: none;
+}
+.up_menu_nav li{
+    margin: 8px 0;
+}
 
 .page{
     height: calc(100vh - 30px);
