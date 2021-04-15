@@ -4,24 +4,24 @@
     margin:0;
 }
 
-.sidebar{
-    height:800px;
-    
+.sidebar1{
+    height: calc(100vh - 30px);
     background-color: black;
+}
+
+
+.page{
+    height: calc(100vh - 30px);
 }
 
 header{
     
-    height:70px;
     background-color:#080B12;
-
 }
 
 main{
-    
-    height: 500px;
-    background-color:#141922;
-    
+
+    background-color:#141922; 
 }
 
 footer{
