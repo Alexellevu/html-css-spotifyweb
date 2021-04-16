@@ -5,8 +5,9 @@
 }
 /* sidebar */
 .sidebar1{
-    height: calc(100vh - 30px);
+    height: calc(100vh - 60px);
     background-color:black;
+    overflow: hidden;
 }
 
 .logo{
@@ -19,6 +20,12 @@
 .img_menu{
     height: 20px;
     width: 25px;
+    color: #6B6E73;
+}
+
+.up_menu_nav{
+    
+
 }
 
 .up_menu_nav li{
@@ -27,11 +34,30 @@
 .up_menu_nav li{
     margin: 8px 0;
 }
-.up_menu_nav a{
+.up_menu_nav a ,.bottom_menu_nav a{
     text-decoration: none;
-    color: #6B6E73;;
+    color: #6B6E73;
 }
 
+.bottom_menu_nav{
+    
+
+}
+
+.profile img{
+    background-color: grey;
+    border-radius:30px;
+    padding:3px 1px;
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.install i{
+    width: 1px;
+    height: 1px;
+    margin-right: 20px;
+}
 
 /* playlist */
 .aggiungi{
@@ -48,7 +74,11 @@
     
 }
 
-
+.install{
+    border-bottom: 1px solid #6B6E73;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
 
 
 
@@ -57,8 +87,12 @@
     height: calc(100vh - 30px);
 }
 header{
-    
+    position: relative;
     background-color:#080B12;
+}
+
+.upgrade{
+    
 }
 
 main{
@@ -70,4 +104,10 @@ footer{
     height: 60px;
     width: 100%;
     background-color:#282828;
+    
+}
+
+/* hover sidebar */
+.sidebar1 a:hover{
+    color: white;
 }
