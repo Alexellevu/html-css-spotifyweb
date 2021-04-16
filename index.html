@@ -15,11 +15,10 @@
 
 <div class="row wrapper">
       <!-- sidebar di sinistra -->
-    <section class="sidebar1 d-flex flex-column justify-content-between ">
-        <div class="container d-flex flex-column justify-content-between ">
+    <section class="sidebar1  d-flex flex-column flex-nowrap ">
             
             <!-- menu superiore -->
-             <div class="up_menu_nav ">
+            
                  <div class="logo">
                     <img class="img-fluid" src="./spotify/img/logo.svg" alt="logo_spotify">
                  </div>
@@ -31,7 +30,7 @@
                 <!-- playlist -->
                 <h6 class="text-uppercase font-weight-bold text-white" >playlist</h6>
                 <a class="text-decoration-none" href="#"><span class="aggiungi">+</span>Crea playlist</a>
-                <ul>               
+                <ul class="playlist_nav">               
                     <li><a href="#">Nome playlist</a></li>
                     <li><a href="#">Nome playlist</a></li>
                     <li><a href="#">Nome playlist</a></li>
@@ -42,7 +41,7 @@
                  </ul>
 
              <!-- menu inferiore sidebar -->   
-            </div>
+            
             <div class="bottom_menu_nav">
                 <div class="install">
                     <i class="far fa-arrow-alt-circle-down"></i>
@@ -55,7 +54,7 @@
                 
             </div>
 
-        </div>
+        
             
       
       </section>
@@ -72,23 +71,82 @@
         <!-- main -->
         <main>
             <!-- riga con lista selezione sezioni -->
-            <div class="container-xl">
+            <div class="container-fluid">
+                <div class="player">
                 <div class="row">
+                    <!-- lista sezioni musicali -->
                     <ul class="section_list">
                        <li><a href="#">in evidenza</a></li>
                        <li><a href="#">podcast</a</li>
                        <li><a href="#">classifiche</a</li>
                        <li><a href="#">generi e mood</a</li>
                        <li><a href="#">nuove uscite</a</li>
-                       <li><a href="#">scopri</a</li>
+                       <li><a href="#">scopri</a></li>
                     </ul>
                 </div>
+                <h3 class="text-white  font-weight-bold">Recently played</h3>
+                <!-- player degli album recenti -->
+                <!-- prima riga -->
+                <div class="recently d-flex flex-row">
+                    <div class="album text-white font-weight-bolder img-fluid max-width: 100%">
+                        <img src="./spotify/img/metal_lifting.jpg" alt="">
+                        <h5>Heavy Metal</h5>
+                        <h6>Subtitle</h6>
+                    </div>
+                    <div class="album text-white font-weight-bolder">
+                        <img src="./spotify/img/stranger.jpeg" alt="">
+                        <h5>Stranger Things, vol.1 [a netflix original series soundtrack</h5>
+                        <h6>kyle Dixon and Michael Stain</h6>
+                    </div>
+                    <div class="album text-white font-weight-bolder">
+                        <img src="./spotify/img/aquietplace.jpeg" alt="">
+                        <h5>A quiet place</h5>
+                        <h6>Subtitle</h6>
+                        
+                    </div>
+                    <div class="album text-white font-weight-bolder">
+                        <img src="./spotify/img/split.jpeg" alt="">
+                        <h5>A quiet place</h5>
+                        <h6>Subtitle</h6>
+                        
+                    </div>
+                    <div class="album text-white font-weight-bolder">
+                        <img src="./spotify/img/cure.jpeg" alt="">
+                        <h5>A quiet place</h5>
+                        <h6>Subtitle</h6>
+                        
+                    </div>
+                    <div class="album text-white font-weight-bolder">
+                        <img src="./spotify/img/sinister.jpeg" alt="">
+                        <h5>A quiet place</h5>
+                        <h6>Subtitle</h6>
+                        
+                    </div>
+
+                </div> 
+                <!-- seconda riga -->
+                
+                <h3 class="text-white  font-weight-bold">Creato per John Dole</h3>
+                <div class="recently d-flex flex-row">
+                    <div class="album text-white font-weight-bolder img-fluid max-width: 100%">
+                        <img src="./spotify/img/radar.jpeg" alt="">
+                        <h5>Realize Radar</h5>
+                        
+                    </div>
+                    <div class="album text-white font-weight-bolder">
+                        <img src="./spotify/img/mixdaily.jpeg" alt="">
+                        <h5>Daily Mix 1</h5>
+                        
+                    </div>
+                    
+                        
+                    </div>
+
+                </div> 
+            </div>
             </div>
                 
         </main>
-
-      
-
     </div>
 </div>
  
@@ -97,7 +155,5 @@
 
 </footer>
 
-    
-    
 </body>
 </html>
