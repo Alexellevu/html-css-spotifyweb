@@ -10,6 +10,7 @@ body{
 /* sidebar */
 .sidebar1{
     height: calc(100vh - 60px);
+    width: 200px;
     background-color:black;
     overflow: hidden;
 }
@@ -35,9 +36,9 @@ body{
     color: #6B6E73;
 }
 
-.up_menu_nav{
-    
-
+.up_menu_nav, .bottom_menu_nav{
+    margin-left: 10px;
+    margin-bottom: 10px;
 }
 
 .up_menu_nav li{
@@ -51,7 +52,7 @@ body{
     color: #6B6E73;
 }
 
-.bottom_menu_nav{
+
     
 
 }
@@ -96,7 +97,8 @@ body{
 
 /* header */
 .page{
-    height: calc(100vh - 30px);
+    height: calc(100vh - 100px);
+    width: calc(100vw - 200px);
 }
 header{
     display: flex;
@@ -108,6 +110,7 @@ header{
     
 }
 
+/* HEADER */
 .upgrade a{
     border:1px solid white;
     border-radius: 25px;
@@ -117,14 +120,26 @@ header{
 }
 
 
-
+/* MAIN */
 main{
-
     background-color:#141922; 
 }
 
+.section_list{
+    margin:20px auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.section_list li, .section_list a{
+    color: #6B6E73;
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    margin:0 10px;
+}
+
 footer{
-    height: 60px;
+    height:100px;
     width: 100%;
     background-color:#282828;
     
@@ -134,8 +149,8 @@ footer{
 .sidebar1 a:hover{
     color: white;
 }
-/* hover upgrade button */
 
+/* hover upgrade button */
 .upgrade:hover{
     transform: scale(1.1 , 1.1);
     margin-right: 10px;
