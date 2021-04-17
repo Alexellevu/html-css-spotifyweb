@@ -9,7 +9,7 @@ body{
 }
 /* sidebar */
 .sidebar1{
-    height: calc(100vh - 60px);
+    height: calc(100vh - 90px);
     width: 200px;
     background-color:black;
     overflow-y: auto;
@@ -21,7 +21,7 @@ body{
 }
 
 .wrapper{
-    height: calc(100vh - 60px);
+    height: calc(100vh - 90px);
 }
 
 .logo{
@@ -102,31 +102,37 @@ body{
     
 }
 
-
-
+/* sezione con header e main */
+.page{
+    height:calc(100vh - 90px);
+    width: calc(100vw - 204px);
+    overflow-y:scroll ;
+}
 
 /* header */
-.page{
-    height: calc(100vh - 100px);
-    width: calc(100vw - 200px);
-}
-header{
-    display: flex;
-    justify-content: right;
-    background-color:#080B12;
-    padding:10px 5px;
-}
-.upgrade{
-    
+.my_container{
+    width: 100%;
+    padding: 15px 15px;
 }
 
 /* HEADER */
-.upgrade a{
+.header_block{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    background-color:#080B12;
+    padding:10px 5px;
+    height: 80px;
+}
+
+.upgrade{
+    margin-right:5px
+}
+.header_block a{
     border:1px solid white;
     border-radius: 25px;
-    padding:10px 50px;
+    padding:10px 50px 10px 50px;
     text-transform: uppercase;
-    
 }
 
 
@@ -150,7 +156,12 @@ main{
 }
 
  /* sezione album */
-.album{
+ .album_block{
+   
+    
+ }
+
+ .album{
     margin-right: 20px;
 }
 
@@ -167,9 +178,24 @@ main{
     text-align: center;
     color:#6B6E73 ;
 }
+.popular img{
+    border-radius: 100px;
+}
 
+
+.album_block .row{
+    margin:50px auto;
+}
+.album_block:first-child{
+    margin-top:10px;
+}
+.album_block h4{
+    color:#6B6E73;
+}
+
+/* footer */
 footer{
-    height:100px;
+    height:90px;
     width: 100%;
     background-color:#282828;   
 }
@@ -180,7 +206,7 @@ footer{
 }
 
 /* hover upgrade button */
-.upgrade:hover{
+.header_block a:hover{
     transform: scale(1.1 , 1.1);
     margin-right: 10px;
 }

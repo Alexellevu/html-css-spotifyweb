@@ -60,19 +60,21 @@
       </section>
     <!-- blocco con header e main -->
       
-        <div class=" page ">
+        <section class=" page ">
         <!-- header con pulsante upgrade-->
-        <header class="">
-            <div class="upgrade">
+        <header >
+            <div class="header_block">
+                <div class="upgrade">
                 <a class="btn text-white" href="#">Effettua l'upgrade</a>
+            </div>
             </div>
         </header>
 
         <!-- main -->
         <main>
             <!-- riga con lista selezione sezioni -->
-            <div class="container-fluid">
-                <div class="player">
+            <div class="my_container">
+                <div class="album_block">
                 <div class="row">
                     <!-- lista sezioni musicali -->
                     <ul class="section_list">
@@ -83,11 +85,12 @@
                        <li><a href="#">nuove uscite</a</li>
                        <li><a href="#">scopri</a></li>
                     </ul>
-                </div>
-                <h3 class="text-white  font-weight-bold">Recently played</h3>
-                <!-- player degli album recenti -->
-                <!-- prima riga -->
-                <div class="recently d-flex flex-row">
+                 </div>
+                 <!-- player degli album recenti -->
+                 <!-- prima riga -->
+                 <h3 class="text-white  font-weight-bold">Recently played</h3>
+                 <div class="row">
+                 <div class="recently d-flex flex-row">
                     <div class="album text-white font-weight-bolder img-fluid max-width: 100%">
                         <img src="./spotify/img/metal_lifting.jpg" alt="">
                         <h5>Heavy Metal</h5>
@@ -123,11 +126,14 @@
                         
                     </div>
 
-                </div> 
-                <!-- seconda riga -->
-                
-                <h3 class="text-white  font-weight-bold">Creato per John Dole</h3>
-                <div class="recently d-flex flex-row">
+                 </div> 
+                </div>
+
+                 <!-- seconda riga -->
+                 <h3 class="text-white  font-weight-bold">Creato per John Dole</h3>
+                 <div class="row">
+                 
+                 <div class="recently d-flex flex-row">
                     <div class="album text-white font-weight-bolder img-fluid max-width: 100%">
                         <img src="./spotify/img/radar.jpeg" alt="">
                         <h5>Realize Radar</h5>
@@ -140,13 +146,32 @@
                     </div>
                     
                         
-                    </div>
-
+                 </div>
+               
+                </div>
+                <!-- terza riga -->
+                <h3 class="text-white  font-weight-bold">Artisti più popolari</h3>
+                <h4>Più ascolti, più accurati saranno i suggerimenti</h4>
+                <div class="row">
+                    <div class="recently popular d-flex flex-row">
+                        <div class="album text-white font-weight-bolder img-fluid max-width: 100%">
+                            <img src="./spotify/img/youg.jpeg" alt="">
+                            <h5></h5>
+                            
+                        </div>
+                        <div class="album text-white font-weight-bolder">
+                            <img src="./spotify/img/einaudi.jpeg" alt="">
+                            <h5></h5>
+                            
+                        </div>
+                </div>
+                
                 </div> 
             </div>
-            </div>
+        </main>  
+    </section>
                 
-        </main>
+        
     </div>
 </div>
  
