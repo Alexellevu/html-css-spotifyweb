@@ -158,7 +158,6 @@ main{
 }
 .section_list li:first-child{
     border-bottom: 2px solid yellow;
-    
 }
 
  /* sezione album */
@@ -210,9 +209,31 @@ footer{
     color: white;
 }
 
-.multimedia img{
+.song_info {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.song_info img{
     height: 50px;
     width: 50px;
+}
+.song_info  li{
+    list-style: none;
+    margin: 0 10px;
+}
+.song_info li>span{
+    color:#6B6E73 ;
+}
+.song_info li> a > i, .song_info a{
+    color: #6B6E73;
+    
+}
+.song_info ul{
+    margin-right: 20px;
 }
 
 
@@ -260,4 +281,9 @@ footer{
 .popular .overlay:hover .play{
     border-radius: 100%;
     cursor: pointer;
+}
+
+/* hover footer */
+.song_info a, .song_info a>i:hover{
+    color:white;
 }
