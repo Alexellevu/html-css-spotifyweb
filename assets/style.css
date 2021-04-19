@@ -15,6 +15,7 @@ body{
     overflow-y: auto;
     padding:10px 25px 5px 35px;
     float: left;
+    justify-content: space-between;
 }
 
 .sidebar1 > .container{
@@ -107,7 +108,7 @@ body{
 /* sezione con header e main */
 .page{
     height:calc(100vh - 90px);
-    width: calc(100vw - 180px);
+    width: calc(100% - 200px);
     overflow-y:scroll;
     float: left;
 }
@@ -166,17 +167,16 @@ main{
  
   
  .album{
-    margin-right: 20px;
-   
-} 
-
-
-
-
-.album img{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
 }
+   
+.album img{
+height: 100%;
+width: 100%;
+
+}
+
 .album h5{
     width: 200px;
     text-align: center;
@@ -189,8 +189,16 @@ main{
 .popular img{
     border-radius: 100px;
 }
+.main_row{
+    width: 100%;
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
 
 
+.my_container .row{
+    margin-top: 20px;
+}
 
 .my_container h4{
     color:#6B6E73;
@@ -237,15 +245,44 @@ footer{
     margin-right: 20px;
 }
 /* parte centrale footer */
+.player{
+    text-align: center;
+}
 .player >.row li{
     list-style: none;
     margin: 0 15px;
 }
-.player li> i{
-  width: 30px;
-  height: 30px;
+.play_button{
+    color: white;
 }
 
+
+.settings{
+    margin-right: 100px;
+}
+.barra_scor{
+    width: 400px;
+    margin-top: 20px;
+    
+    border-bottom: 4px solid #6B6E73;
+}
+
+.barra_scor2{
+    width: 100px;
+    margin-top: 20px;
+    border-bottom: 4px solid white;
+}
+
+.barra_scor3{
+    width: 10px;
+    height: 5px;
+    border-bottom: 4px solid #6B6E73;
+}
+.barra_scor4{
+    width: 30px;
+    height: 5px;
+    border-bottom: 4px solid white;
+}
 
 
 
@@ -299,9 +336,21 @@ footer{
     color:white;
 }
 
+/* mediaquery */
+
 @media screen and (max-width: 576px){
     .logo, .playlist_nav, .sidebar1 h6, .sidebar1 span, .bottom_menu_nav span, .install a{
         display: none;
+    }
+
+    .sidebar1{
+        width:30px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .page{
+        width: calc(100% - 30px);
     }
 
     
