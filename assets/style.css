@@ -167,8 +167,7 @@ main{
  
   
  .album{
-    height: 150px;
-    width: 150px;
+   
 }
    
 .album img{
@@ -313,17 +312,17 @@ footer{
  left:50%;
  top:50%;
  transform: translate(-50% , -50%);
+ height: 100%;
+ width: 100%;
+ background-color:rgba(0, 0, 0, 0.5);
  text-align: center;
+ padding-top: 65px;
  display: none;
- 
 }
 
-.album:hover .play{
-    display: block;
+.overlay:hover .play{
+    display: inline;
     cursor: pointer;
-}
-.album:hover{
-    opacity: 0.5;
 }
 
 .popular .overlay:hover .play{
